@@ -1,0 +1,22 @@
+{
+  "name": "picsportfolio",
+  "version": "1.0.0",
+  "description": "Swig's Portfolio",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bmain\u001b[\u001b[C\u001b[C\u001b[",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petra-at/PicsPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petra-at/PicsPortfolio/issues"
+  },
+  "homepage": "https://github.com/petra-at/PicsPortfolio#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  }
+}
