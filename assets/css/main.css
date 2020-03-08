@@ -3350,12 +3350,32 @@
 
 /* Banner */
 
+
+	}
+	
+	.video-container{
+	
+		
+		opacity: 0.78;
+		position: absolute;
+		z-index: 0;
+		background: url("../../vids/vid_cropShot.mp4") no-repeat;
+		background-size: 100% 100%;
+		top: 0px;
+		left: 0px; /* fixed to left. Replace it by right if you want.*/
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+	}
+
 	#banner {
 		background-color: #3498db;
 		color: rgba(255, 255, 255, 0.75);
 		text-align: center;
 		cursor: default;
 		padding: 10em 4em 9em 4em;
+		
 	}
 
 		#banner input, #banner select, #banner textarea {
