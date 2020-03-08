@@ -74,6 +74,9 @@
 				// Set position.
 					if (x = $img.data('position'))
 						$image.css('background-position', x);
+						$image.css('background-color','black');
+						$image.css('background-size','contain');
+						$image.css('animation','fadeIn 2s');
 
 			});
 
