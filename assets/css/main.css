@@ -12,6 +12,9 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	option{
+		color:black;
+	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -43,6 +46,17 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.black{
+		color:black;
+	}
+
+	.grey{
+		color:#bbb
+	}
+
+	video{
+		object-fit: fill;
+	}
 
 	#swigHeader{
 		font-family: 'Oswald', sans-serif !important;
@@ -1999,7 +2013,7 @@
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		margin: 3em 3em 3em 3em;
 	}
 
 	label {
@@ -2012,6 +2026,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2032,6 +2047,7 @@
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2072,6 +2088,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
@@ -2171,6 +2188,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		background: rgba(144, 144, 144, 0.075);
@@ -3295,7 +3313,6 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7em;
 		}
 
@@ -3350,33 +3367,18 @@
 
 /* Banner */
 
-
-	}
-	
-	.video-container{
-	
-		
-		opacity: 0.78;
-		position: absolute;
-		z-index: 0;
-		background: url("../../vids/vid_cropShot.mp4") no-repeat;
-		background-size: 100% 100%;
-		top: 0px;
-		left: 0px; /* fixed to left. Replace it by right if you want.*/
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
-	}
-
 	#banner {
-		background-color: #3498db;
+		background-color: #1c1c1c;
 		color: rgba(255, 255, 255, 0.75);
 		text-align: center;
 		cursor: default;
-		padding: 10em 4em 9em 4em;
-		
+		z-index: 0;
+		/*padding: 10em 4em 9em 4em;*/
+		background: linear-gradient(135deg, #8bbbee 0%, #111111 74%);
 	}
+	
+	
+
 
 		#banner input, #banner select, #banner textarea {
 			color: #fff;

@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#ffffff">
     </head>
     
-	<body style="background-color: black;">
+	<body style="background-color: white "!important;>
 
 		<!-- Header -->
 			<header id="header">
@@ -50,10 +50,55 @@
 				</ul>
 			</nav>
 
-			<section id="two" class="post invert style1 alt">
-              
-			</section>
+			<!-- Form -->
+            <section>
+                    
+                    <form method="post" action="#">
+                        <h3 class="black">Contact Form</h3>
+                        <div class="row uniform 50%">
+                            <div class="6u 12u$(xsmall) black">
+                                <input type="text" name="name" id="name" value="" placeholder="Name" required/>
+                            </div>
+                            <div class="6u$ 12u$(xsmall) black">
+                                <input type="email" name="email" id="email" value="" placeholder="Email" required/>
+                            </div>
+                            
+                            <div class="6u$ 12u$(xsmall) black">
+                                    <input type="tel" name="phone" id="phone" value="" placeholder="Mobile No. (optional)"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    required />
+                                </div>
+                            <div class="12u$">
+                                <div class="select-wrapper grey">
+                                    <select class  ="black"name="category" id="category">
+                                        <option value="">- Category -</option>
+                                        <option value="1">Graduation</option>
+                                        <option value="1">Corporate</option>
+                                        <option value="1">Wedding</option>
+                                        <option value="1">Birthday</option>
+                                        <option value="1">Anniversary</option>
+                                        <option value="1">Birthday</option>
+                                    </select>
+                                </div>
+                            </div>
 
+                            <div class="12u$ black">
+                                <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                            </div>
+                            <div class="12u$">
+
+                                    <div class="6u$ 12u$(small)">
+                                            <input type="checkbox" id="human" name="human" checked>
+                                            <label for="human">I am a human and not a robot</label>
+                                        </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" class="special" /></li>
+                                    <li><input type="reset" value="Reset" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                    </form>
+                </section>
 		
 		<!-- Footer -->
 			<footer id="footer">
