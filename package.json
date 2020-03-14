@@ -18,6 +18,7 @@
   "homepage": "https://github.com/petra-at/PicsPortfolio#readme",
   "dependencies": {
     "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
     "bootstrap": "^4.4.1"
   }
 }
