@@ -81,6 +81,7 @@
 					side: 'right'
 				});
 
+	
 		// Posts.
 			var $posts = $('.post');
 
