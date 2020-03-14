@@ -14,7 +14,7 @@
 
 		var	$window = $(window),
 			$body = $('body'),
-			$header = $('#header');
+			$header = $('#header2');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -45,6 +45,28 @@
 				speed: 1000,
 				offset: $header.outerHeight() -1
 			});
+
+			//Header.
+
+			$header.each( function() {
+
+				var t = jQuery(this),
+					button 	= t.find('.button');
+
+				button.click(function(e) {
+
+					t.toggleClass('hide');
+
+					if ( t.hasClass('preview') ) {
+						return true;
+					} else {
+						e.preventDefault();
+					}
+
+				});
+
+			});
+
 
 		// Menu.
 			$('#menu')
