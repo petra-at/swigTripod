@@ -119,6 +119,15 @@
 		}
 	}
 
+	#slideshow{
+		position: fixed;
+		top: 0px;
+		z-index: 100001;
+		left: 49%;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
 	/* Thumbnails */
 
 	.thumbnails {
