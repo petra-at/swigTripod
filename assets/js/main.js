@@ -17,6 +17,9 @@
 		var	$window = $(window),
 			$body = $('body'),
 			$header = $('#header2');
+			$scrolldown=$('#scrolldown');
+
+			$scrolldown.css('animation','bounce infinte 2s');
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
@@ -68,7 +71,8 @@
 				});
 
 			});
-
+			
+			
 
 		// Menu.
 			$('#menu')
@@ -118,7 +122,6 @@ $window.on('load', function() {
 						$image.css('background-color','black');
 						$image.css('background-size','contain');
 						$image.css('animation','fadeIn 2s');
-
 			});
 
 	});

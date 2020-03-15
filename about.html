@@ -22,6 +22,7 @@
 <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
 <link rel="manifest" href="./images/favicons/manifest.json">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./images/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -47,24 +48,32 @@
 					
 				</ul>
             </nav>
-            
+        <!--Video Banner-->    
             <section id="banner">
 					<video autoplay muted playsinline src="./vids/vid_cropShot.mp4" ></video>
+					
+					<a style="text-decoration: none;position:relative; top:20%;scroll-behavior:smooth; "href="#intro"><h1 style=" color:rgb(66, 168, 216);z-index: 30000;" class="animated infinite slideOutDown slower navbarIcons icon fa-chevron-down fa-3x"></h1></a>
             </section>
-			
+			<div id="intro"></div>
+		<!--Text-->
             <div id="bio"class="container">
-                    <div class="row">
-					  
-					<div id="profileContainer" style = "height:fit-content" class="col">
+                <div class="row">
+					<!--Profile Image-->
+					<div data-aos="fade-right"
+					data-aos-offset="300"
+					data-aos-easing="ease-in-sine" id="profileContainer" style = "height:fit-content" class="col">
                        <img id ="profile2" src="./images/swigProfile02.png"/>
 					</div>
-					  
-                    <div  class="col">
-                          <h2 style="margin-top:20px;"> Bio </h2>
-                            <hr>
-                         <h4 style="display:inline;">Hi!</h4> <p class="small">I'm Panashe Mugspie. But most people call me Swig. A pseudonym that hasn't escaped me from highschool! 
-                            <br>Based in Harare, Zimbabwe, I've had the pleasure of working as a portraight photographer with a vast clientele. 
-                            Ranging from corporate, to graduation ceremonies. </p>
+
+					<!--Bio Text-->
+                    <div data-aos="fade-left"
+					data-aos-offset="400"
+					data-aos-easing="ease-in-sine" class="col">
+					
+                    <hr>
+                         <h4 style="display:inline;">Hesi!</h4> <p class="small">I'm Panashe Mugspie. But most people call me Swig. A pseudonym that hasn't escaped me from highschool! 
+                            <br>Based in Harare, Zimbabwe, I've had the pleasure of working as a portraight photographer with a number of clients. 
+                            <br>Ranging from corporate, to graduation ceremonies. </p>
                             <p class="small">
                             My main goal as a photographer is to look beyond the face, and capture something deeper. 
                             Everytime the shutter is released during a shoot I consider the visual possibilities of what happens.
@@ -72,11 +81,11 @@
                             A goto setup of mine is the use of the Godox AD600BM strobe as my main light and a silver reflector for fill. </p>
 
                         <p class="small"> Alongside working as a photographer, I'm a final year med student working towards becoming a physician.
-                            If you like the photos and would like to hire a photographer, please do get in touch. 
+                            If you like the photos and would like to hire me as your photographer, please do get in touch. 
                             <em>I'm always keen to take on new opportunities!</em> <div><a class ="small" style="margin: 40%;"href="contacts.html">Contact</a></div></p>
                             
                     </div>
-                    </div>
+            	</div>
                     
             </div>
 		
@@ -100,5 +109,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script> AOS.init();</script>
 	</body>
 </html>

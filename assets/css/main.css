@@ -11,6 +11,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 	option{
 		color:black;
@@ -123,7 +124,7 @@
 		position: fixed;
 		top: 0px;
 		z-index: 100001;
-		left: 49%;
+		right: 49.5%;
 		margin: 0 auto;
 		cursor: pointer;
 	}
@@ -3740,7 +3741,9 @@
 		}
 
 	}
+	#bio{
 
+	}
 /* Menu */
 
 	#menu {
