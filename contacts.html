@@ -65,29 +65,30 @@
                             
                             <div class="6u$ 12u$(xsmall) black">
                                     <input type="tel" name="phone" id="phone" value="" placeholder="Mobile No. (optional)"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                    required />
+                                     />
                                 </div>
                             <div class="12u$">
                                 <div class="select-wrapper grey">
-                                    <select class  ="black"name="category" id="category">
+                                    <select class  ="black" name="category" id="category" required>
                                         <option value="">- Category -</option>
-                                        <option value="1">Graduation</option>
-                                        <option value="1">Corporate</option>
-                                        <option value="1">Wedding</option>
-                                        <option value="1">Birthday</option>
-                                        <option value="1">Anniversary</option>
-                                        <option value="1">Birthday</option>
+                                        <option value="graduation">Graduation</option>
+                                        <option value="corporate">Corporate</option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="birthday">Birthday</option>
+										<option value="anniversary">Anniversary</option>
+										<option value="familyPortrait">Family Portrait </option>
+                                        <option value="personalPortrait">Personal Portrait</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div class="12u$ black">
-                                <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                                <textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
                             </div>
                             <div class="12u$">
 
                                     <div class="6u$ 12u$(small)">
-                                            <input type="checkbox" id="human" name="human" checked>
+                                            <input type="checkbox" id="human" name="human" required>
                                             <label for="human">I am a human and not a robot</label>
                                         </div>
                                 <ul class="actions">
@@ -103,9 +104,7 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="mailto:panagoofy@gmail.com" class="icon fa-envelope"><span class="label">E-mail</span></a></li>
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="mailto:pmugwise@gmail.com" class="icon fa-envelope"><span class="label">E-mail</span></a></li>
 					<li><a href="https://www.instagram.com/swigstripod/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 				</ul>
 				<div class="copyright">

@@ -2548,6 +2548,7 @@
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		input[type="tel"]:invalid,
+		input[type="checkbox"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
