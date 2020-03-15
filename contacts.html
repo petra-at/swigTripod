@@ -56,20 +56,20 @@
                     <form method="post" action="#">
                         <h3 class="black">Contact Form</h3>
                         <div class="row uniform 50%">
-                            <div class="6u 12u$(xsmall) black">
+                            <div class="6u 12u$(small) black">
                                 <input type="text" name="name" id="name" value="" placeholder="Name" required/>
                             </div>
-                            <div class="6u$ 12u$(xsmall) black">
+                            <div class="6u$ 12u$(small) black">
                                 <input type="email" name="email" id="email" value="" placeholder="Email" required/>
                             </div>
                             
-                            <div class="6u$ 12u$(xsmall) black">
+                            <div class="6u$ 12u$(small) black">
                                     <input type="tel" name="phone" id="phone" value="" placeholder="Mobile No. (optional)"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                      />
                                 </div>
-                            <div class="12u$">
+                            <div class="6u$" >
                                 <div class="select-wrapper grey">
-                                    <select class  ="black" name="category" id="category" required>
+                                    <select style = "margin-bottom: 10px" class  ="black" name="category" id="category" required>
                                         <option value="">- Category -</option>
                                         <option value="graduation">Graduation</option>
                                         <option value="corporate">Corporate</option>
@@ -82,23 +82,31 @@
                                 </div>
                             </div>
 
-                            <div class="12u$ black">
+                            <div class="6u$ 12u$(small) black">
                                 <textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
-                            </div>
-                            <div class="12u$">
+							</div>
 
-                                    <div class="6u$ 12u$(small)">
-                                            <input type="checkbox" id="human" name="human" required>
-                                            <label for="human">I am a human and not a robot</label>
-                                        </div>
+							<div></div>
+
+							<div id ="map" class="3u$ 12u$(small) black">
+									
+							</div>
+
+							<div class ="2u$ 12u$(small) black" style="color: black">
+									<h5 style="color: black">Contact Info</h5>
+									<span class="navbarIcons icon fa-image "> (+263) 77 884 1952</span><br>
+									<span class="navbarIcons icon fa-image "> pmugwise@gmail.com</span><br>
+									<span class="navbarIcons icon fa-image "> 630 Churchill Avenue, Harare, Zimbabwe</span>
+							</div>
+							
+                            <div class="12u$">
                                 <ul class="actions">
                                     <li><input type="submit" value="Send Message" class="special" /></li>
                                     <li><input type="reset" value="Reset" /></li>
                                 </ul>
                             </div>
                         </div>
-                    
-                    </form>
+					</form>		
                 </section>
 		
 		<!-- Footer -->
@@ -121,5 +129,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/googleMap.js"></script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdlx5XClkZOFG1UXfxopNR2ore3dFHsjw&callback=initMap"></script>
 	</body>
 </html>

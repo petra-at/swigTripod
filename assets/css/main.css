@@ -128,6 +128,15 @@
 		cursor: pointer;
 	}
 
+	#map{
+		height:300px;
+		
+	}
+
+	.contactDetails{
+		float: right;
+	}
+
 	/* Thumbnails */
 
 	.thumbnails {

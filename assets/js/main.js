@@ -10,6 +10,8 @@
 		xsmall:	'(max-width: 480px)'
 	});
 
+	
+
 	$(function() {
 
 		var	$window = $(window),
@@ -98,8 +100,6 @@ $window.on('load', function() {
 	});
 
 });
-
-	
 		// Posts.
 			var $posts = $('.post');
 
