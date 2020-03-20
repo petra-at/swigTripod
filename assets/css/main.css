@@ -564,8 +564,7 @@
 				-webkit-transition: -webkit-transform 0.2s ease-in-out;
 				-ms-transition: -ms-transform 0.2s ease-in-out;
 				transition: transform 0.2s ease-in-out;
-				-webkit-backface-visibility: hidden;
-				-webkit-transform: translate3D(0, 0, 0);
+			
 			}
 
 			.columns .image:hover img {
@@ -659,9 +658,7 @@
 /* Containers */
 
 	.container {
-		/*margin-left: auto;
-		margin-right: auto;
-		*/
+		text-emphasis: none;
 	}
 
 	.container.\31 25\25 {
@@ -3798,9 +3795,7 @@
 		}
 
 	}
-	#bio{
 
-	}
 /* Menu */
 
 	#menu {
