@@ -19,7 +19,7 @@
 			$header = $('#header2');
 			$scrolldown=$('#scrolldown');
 
-			$scrolldown.css('animation','bounce infinte 2s');
+			
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
