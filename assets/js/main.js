@@ -71,6 +71,26 @@
 				});
 
 			});
+		// Slideshow
+			$("#slideshow").click(function(){
+				//toggle show/hide the carousel
+				$("#carouselExampleIndicators").toggle("slow",function(){
+					
+				//toggle show/hide play button and close button 
+					if($("#slideshow").hasClass("fa-play"))
+					{
+						$("#slideshow").removeClass("fa-play"); 
+						$("#slideshow").addClass("fa-close"); 
+					}
+					else
+					{
+						$("#slideshow").addClass("fa-play"); 
+						$("#slideshow").removeClass("fa-close"); 
+					}
+				});
+				
+			})
+
 			
 			
 
