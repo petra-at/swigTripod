@@ -3639,6 +3639,7 @@
 			color: #fff;
 			font-size: 1.25em;
 			text-decoration: none;
+			
 		}
 			#header .logo > a {
 				padding: 0;
@@ -3648,6 +3649,7 @@
 			#header .logo img{
 				margin: 0 auto;
 				max-height:1.5em;
+				margin-top:10px;
 			}
 
 			#header .logo strong {
