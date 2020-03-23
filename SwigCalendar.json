@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "swigproject",
+  "private_key_id": "56decac8c777433a1c69c142b906b665b026d189",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDIcOT7M8Wbe63r\nErmwjWNFFsgqUeWfTIfBFodDPQQOGHwFiKEC8w+xMF3J2CkYyntrqaWIdYNZK6mJ\nwYjPUW7RrMdGZAa6TahqcXzvSChDeNSUMv4/jJlKmwO2EzWGMVNwID7ScvwclR42\n9mUQTgy9O2fcF0qBZw6tcFVLqJIH2MEw0MwqcOuJ3JqMLrCHKDGtdcNY3q1VGn1z\nitJC7gqRIHz2mS3xUb/CRKPILlMjI2SEwZXR8M1psy01w67JAQomuK+IGLt/G0cq\nNu2FxIlXJJoTlklTFT0ngKSaw2IrtXu9KklGUlp8eFHwHS+vflCZsskrLkL/TCvC\nM/u9bYS7AgMBAAECggEAAPJ08obqbnNQKBCHlhZPm2+hydQR51sfjRcD0+/W3ruD\njSx5w594ZILw/oIp94xatvCEmrd2GRbED1A9yupR7BBf71eLp0JfWFlpmLaDkjC2\nTcOhQJWefSQXCWY1K4l8y8aAkCgA7vWkFehmI9nqj35XXZ/dN0KlvBtlcR0Ty5EF\nfEBquxT3Z0qvi5K9oE0HQSLnKMq1SZakvRO+n6o/89UbW0h1nFBGPg+ZkSwE4oMO\nJX8+J2Fg7k5mUUSCKYSYFGANWUkWnV93i4G8hn9QmPTe0DJU/DE2LitmcFPuP+K9\nalKZMH/V6wKH4iUgeoe1k7LbVk5CHEbo1/RDfBOu0QKBgQDrS45tx1z81u7TWWHR\ngDeVhuYpZ10lvDi3lM9ssUWazlTOL0k6k74QmeYp1F0BDEspImpA1HnhCkIgWBBn\n7nPqp1kF2MSGC0LeqoQatBhP+wdaCR9F8QfHGi3GRSo1lHYLCsiTtX8CgsXXXFAr\npqJP/3aB0ml4fZ8O4YLTqiBWeQKBgQDaFC+lEglV0ouJQf7b9iP1BaN5ILy17Cjf\nuoJTmBm8BkKSErGWsBDh3Cr6R2Fk8Jc0lu2HLcykb206VXCCoSjf3g8mgycZPTdF\nP4jpON2/VfDMhhLVNLJ+AP6YA7nDwJdfSNQyUN+ss5ux9VepGyq5uHbxyYimPZhY\ngy/UTDR30wKBgQDI3VBygO3t3mI1RKmP2mAZIvcbQ2UuUJcuiTfl9xOPizK0bYOb\nIQLxUyA8d1EKEv+a1wlT3M9LAKHg0Kz4vIRyPnht2FY0hCqKwZBS54mVxZvKDd2H\nrLLSEpQfHW5iHSIEXSlLh3Yso4zXQ7Qg/3iyyEfXndNyC/OcFYHExggjKQKBgFvR\nTfIZMvcAa6GBuNVRv/fkxNw17V5HLTptY3vguU0R8atg1YaVYLZHpYy0ywvdxDvv\nI9jbbqL5CysZWAKX6ga/ju9vHuIghQnR40oWmD5756Ok+37q7g/hSVAlmWwSxWjn\n1/fLVzF2eaImox7fAlEpmmLYsIEVw/PYYCXpY9njAoGAGsLGqELNaYg7t3wox3Wl\nkey2EIgL3oEOj1fW/7V6vU+My5HO5NXqy5ZGImbZm6D7U26+KeY/tIZCE8XVXzdz\nosuj+pJ/xqBOwScj1fZsGQmjRqYJvVIL0FV0OTfXohax7s1FlAFcoUAaLnIHq8kd\nnGJ0VF7Ic/51dzHTKkFLV4M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "petra-479@swigproject.iam.gserviceaccount.com",
+  "client_id": "103112777748884237224",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/petra-479%40swigproject.iam.gserviceaccount.com"
+}
