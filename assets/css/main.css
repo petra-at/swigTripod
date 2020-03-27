@@ -120,6 +120,44 @@
 		}
 	}
 
+	 @media screen and (max-width:320px) {
+		#swigCalendar{
+			width: 300px;
+			height:320px;
+		}
+	}
+
+	@media screen and (min-width:375px) {
+		#swigCalendar{
+			width: 375px;
+			height:445px;
+		}
+	}
+
+	@media screen and (min-width:425px) {
+		#swigCalendar{
+			width: 410px;
+			height:445px;
+		}
+	}
+
+
+	@media screen and (min-width:768px) {
+		#swigCalendar{
+			width: 730px;
+			height:600px;
+		}
+	}
+
+	
+	@media screen and (min-width:1024px) {
+		#swigCalendar{
+			width: 1200px;
+			height:650px;
+		}
+	}
+
+
 	#slideshow{
 		position: fixed;
 		top: 0px;
@@ -133,6 +171,7 @@
 		height:300px;
 		
 	}
+
 
 	.contactDetails{
 		float: right;
