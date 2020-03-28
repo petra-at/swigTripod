@@ -60,6 +60,10 @@
 		margin: 0 auto; 
 	}
 
+	.hide{
+		display: none;
+	}
+
 
 	#swigHeader{
 		font-family: 'Oswald', sans-serif !important;
