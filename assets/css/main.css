@@ -64,14 +64,31 @@
 	.hide{
 		display: none;
 	}
+
 	.coloriseswig {
 		transition: transform .5s, filter 1.5s ease-in-out;
 		filter: grayscale(100%);
+		-webkit-transition: transform .5s, filter 1.5s ease-in-out;
+		-webkit-filter:grayscale(100%);
+		-moz-transition: transform .5s, filter 1.5s ease-in-out;
+		-moz-filter:grayscale(100%);
+		-o-transition: transform .5s, filter 1.5s ease-in-out;
+		-o-filter:grayscale(100%);
+		-ms-transition: transform .5s, filter 1.5s ease-in-out;
+		-ms-filter:grayscale(100%);
 	}
 
 	.coloriseswig:hover  {
 		filter: grayscale(0);
 		transform: scale(1.1);
+		-webkit-filter:grayscale(0);
+		-webkit-transform:scale(1.1);
+		-moz-filter:grayscale(0);
+		-moz-transform:scale(1.1);
+		-o-filter:grayscale(0);
+		-o-transform:scale(1.1);
+		-ms-filter:grayscale(0);
+		-ms-transform:scale(1.1);
 		}
 	
 
