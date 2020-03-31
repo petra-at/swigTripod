@@ -96,14 +96,14 @@
                         <p class="small"> Alongside working as a photographer, I'm a final year med student working towards becoming a physician.
 							If you like the photos and would like to hire me as your photographer, please do get in touch. </p>
 							
-						<p class="small">Feel free to book a session or for general enquiries don't hesitate to contact. <br>
+						<p class="small">For any enquiries don't hesitate to contact. <br>
 							<em>I'm always keen to take on new opportunities!</em> 
 						</p>
 						
 
 						<div style="margin: 20px auto;display:flex;justify-content: flex-start;">
 							<a style="margin-right:50px;" class ="small" href="contacts.php">Contact</a>
-							<a class ="small"href="session.php">Book a Session</a>
+							
 						</div>
 						
                     </div>
