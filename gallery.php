@@ -50,7 +50,6 @@
 					<li><a href="index.php"><span class="navbarIcons icon fa-home"></span>Home</a></li>
 					<li><a href="about.php"><span class="navbarIcons icon fa-user-md"></span>About</a></li>
 					<li><a href="gallery.php"><span class="navbarIcons icon fa-image"></span>Gallery</a></li>
-					<li><a href="session.php"><span class="navbarIcons icon fa-calendar"></span>Book a Session</a></li>
 					<?php
 					if(isset($_SESSION['userId']))
 						{
@@ -73,19 +72,35 @@
 
 		<!--SlideShow Carousel -->
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				
 					<div class="carousel-inner">
-						<!-- NEED TO MAKE DYNAMIC WILL LEAVE THE ACTIVE ONE AND ADD SRC
-						SUBSEQUENT IMAGES WILL ADD A DIV WILL THE CLASS CAROUSEL ITEM -->
-					<div class="carousel-item active">
-						<img class="d-block" src="./images/pinkDress.png" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block " src="./images/financeMan02.png" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block" src="./images/SwigProfile.jpeg" alt="Third slide">
-					</div>
+						<?php
+							include_once './includes/dbh.php';
+							$sql = "SELECT * FROM gallery ORDER BY ORDERPICS ASC";
+							$stmt = mysqli_stmt_init($conn);
+							if(!mysqli_stmt_prepare($stmt,$sql))
+							{
+								echo "Database error!";
+							}
+							else {
+								mysqli_stmt_execute($stmt);
+								$result = mysqli_stmt_get_result($stmt);
+								$count =0; 
+								while($row = mysqli_fetch_assoc($result)){
+									$count +=1; 
+									$formatImagePath = '.'.ltrim($row["PATHFILE"],$row["PATHFILE"][0]);
+									if($count==1){
+										echo '<div class="carousel-item active">
+										<img class="d-block" src='.$formatImagePath.' alt='.$row["ORDERPICS"].'>
+										</div>';
+									}
+									else {
+										echo '<div class="carousel-item">
+										<img class="d-block" src='.$formatImagePath.' alt='.$row["ORDERPICS"].'>
+										</div>';
+									}
+								}
+							}
+						?>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -99,69 +114,33 @@
 
 		<!--Main -->
 				<div id="main">
-						<div class="inner">
-								
-								<div id="slideshow"class="icon fa-play fa-1x"></div>
+					<div class="inner">	
+						<div id="slideshow"class="icon fa-play fa-1x"></div>
 							
-								<div class="columns">
+							<div class="columns">
 								<!-- Column 1 (horizontal, vertical, horizontal, vertical) -->
-									<div class="image fit">
-										<a href="./images/2ndBirthday_baby.png"><img src="./images/2ndBirthday_baby.png" alt="" title="An image" title="An image (#1)"  /></a>
-									</div>
-									<div class="image fit">
-										<a href="./images/africanAttireCouple.png"><img src="./images/africanAttireCouple.png" alt="" title="An image (#2)" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/blackJacket_girl02.png"><img src="images/blackJacket_girl02.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/blueWhiteCouple.png"><img src="images/blueWhiteCouple.png" alt="" title="An image" /></a>
-									</div>
-		
-								<!-- Column 2 (vertical, horizontal, vertical, horizontal) -->
-									<div class="image fit">
-										<a href="images/graduation_woman01.png"><img src="images/graduation_woman01.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/redHot.png"><img src="images/redHot.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/sisterlyLove.png"><img src="images/sisterlyLove.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/whiteDress04.png"><img src="images/whiteDress04.png" alt="" title="An image" /></a>
-									</div>
-		
-								<!-- Column 3 (horizontal, vertical, horizontal, vertical) -->
-									<div class="image fit">
-										<a href="images/topModel.png"><img src="images/topModel.png" alt="" title="An image" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/sophisticatedGirl.png"><img src="images/sophisticatedGirl.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/blueShirt_family.png"><img src="images/blueShirt_family.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/catBaby.png"><img src="images/catBaby.png" alt="" title="An image" /></a>
-									</div>
-		
-								<!-- Column 4 (vertical, horizontal, vertical, horizontal) -->
-									<div class="image fit">
-										<a href="images/financeMan01.png"><img src="images/financeMan01.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/flickHairGirl.png"><img src="images/flickHairGirl.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="./images/midDriftGirl.png"><img src="images/midDriftGirl.png" alt="" title="An image" /></a>
-									</div>
-									<div class="image fit">
-										<a href="images/professorMan.png"><img src="images/professorMan.png" alt="" title="An image" title="An image" /></a>
-									</div>
-							</div>
-
+								<?php
+									include_once './includes/dbh.php';
+									$sql = "SELECT * FROM gallery ORDER BY ORDERPICS ASC";
+									$stmt = mysqli_stmt_init($conn);
+									if(!mysqli_stmt_prepare($stmt,$sql))
+									{
+										echo "Database error!";
+									}
+									else {
+										mysqli_stmt_execute($stmt);
+										$result = mysqli_stmt_get_result($stmt); 
+										while($row = mysqli_fetch_assoc($result)){
+											$formatImagePath = '.'.ltrim($row["PATHFILE"],$row["PATHFILE"][0]);
+								echo'<div class="image fit">
+										<a href="'.$formatImagePath.'"><img src="'.$formatImagePath.'" title="'.$row['CAPTION'].'"/></a>
+									</div>';
+										}
+									}
+								?>		
+							</div>	
 						</div>
+					</div>
 				</div>
 				
 		<!-- Footer -->

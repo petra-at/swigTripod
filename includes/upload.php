@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST['upload-submit']))
 {
-    $category = $_POST['category'];
     $caption = $_POST['imageCaption'];
     if(empty($caption)){
         $caption = $category . ' image'; 
@@ -61,7 +60,7 @@ if(isset($_POST['upload-submit']))
 
                             //upload image to the server 
                             move_uploaded_file($imageTempName,$fileDestination);
-                            header("Location: ../gallery.php?upload=success");
+                            header("Location: ../upload.php?upload=success");
                         }
                     }
                 }

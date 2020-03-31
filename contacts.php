@@ -46,12 +46,11 @@
 			</header>
 
 		<!-- Nav -->
-		<nav id="menu">
+			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.php"><span class="navbarIcons icon fa-home"></span>Home</a></li>
 					<li><a href="about.php"><span class="navbarIcons icon fa-user-md"></span>About</a></li>
 					<li><a href="gallery.php"><span class="navbarIcons icon fa-image"></span>Gallery</a></li>
-					<li><a href="session.php"><span class="navbarIcons icon fa-calendar"></span>Book a Session</a></li>
 					<?php
 					if(isset($_SESSION['userId']))
 						{
@@ -75,7 +74,7 @@
                             </div>
                             
                             <div class="6u$ 12u$(small) black">
-                                    <input type="tel" name="phone" id="phone" value="" placeholder="Mobile No. (optional)"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    <input type="tel" name="phone" id="phone" value="" placeholder="Mobile No. (optional)"
                                      />
                                 </div>
                             <div class="6u$ 12u$(small) black" >
@@ -93,17 +92,17 @@
                                 </div>
                             </div>
 
-                            <div class="6u$ 12u$(small) black">
+                            <div class="6u$ 12u$(medium) 12u$(small) black">
                                 <textarea name="message" id="message" placeholder="Enter your message" rows="6" required></textarea>
 							</div>
 
 							<div class="u$"></div>
 
-							<div id ="map" class="3u$ 12u$(small) black">
-									
+							<div id ="themap" class="6u$(medium) 12u$(small) black">
+							<iframe width="323" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=zimbabwe%2C%20harare&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 							</div>
 
-							<div class ="2u$ 12u$(small) black" style="color: black">
+							<div class ="2u$ 6u$(small) black" style="color: black">
 									<h5 style="color: black">Contact Info</h5>
 									<span class="navbarIcons icon fa-phone "> (+263) 77 884 1952</span><br>
 									<span class="navbarIcons icon fa-envelope"><a href="mailto:pmugwise@gmail.com"> pmugwise@gmail.com</a></span><br>
@@ -132,7 +131,31 @@
 				</div>
 			</footer>
 
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div style="position: relative; top: 40px;border-bottom: white;"class="modal-header">
+					<h2 class="modal-title black" id="exampleModalLabel">Email Sent</h2>
+					<hr>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="black bold modal-body">
+					
+					We'll get back to you shortly! 
+				</div>
+				<div class="modal-footer">
+					<button style="margin:0 auto;" type="button" class="btn btn-secondary center" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+			</div>
+
 		<!-- Scripts -->
+		
+
 			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -141,7 +164,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/googleMap.js"></script>
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDqHyaeE69JjxfPa4-hLO48lCmRgq1fcg&callback=initMap"></script>
+			<script> 
+				jQuery.noConflict(); 
+				if (window.location.href.indexOf("?mail=success") > -1) {
+					$('#exampleModal').modal('show');
+				}
+			</script>
 	</body>
 </html>

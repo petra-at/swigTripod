@@ -52,7 +52,6 @@
 					<li><a href="index.php"><span class="navbarIcons icon fa-home"></span>Home</a></li>
 					<li><a href="about.php"><span class="navbarIcons icon fa-user-md"></span>About</a></li>
 					<li><a href="gallery.php"><span class="navbarIcons icon fa-image"></span>Gallery</a></li>
-					<li><a href="session.php"><span class="navbarIcons icon fa-calendar"></span>Book a Session</a></li>
 					<?php
 					if(isset($_SESSION['userId']))
 						{
@@ -91,8 +90,9 @@
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
-				<div style="position: relative; top: 25px;border-bottom: white;"class="modal-header">
+				<div style="position: relative; top: 55px;border-bottom: white;"class="modal-header">
 					<h2 class="modal-title black" id="exampleModalLabel">Welcome Swig</h2>
+					<hr>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 					</button>

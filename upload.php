@@ -50,7 +50,7 @@
 					<li><a href="index.php"><span class="navbarIcons icon fa-home"></span>Home</a></li>
 					<li><a href="about.php"><span class="navbarIcons icon fa-user-md"></span>About</a></li>
 					<li><a href="gallery.php"><span class="navbarIcons icon fa-image"></span>Gallery</a></li>
-					<li><a href="session.php"><span class="navbarIcons icon fa-calendar"></span>Book a Session</a></li>
+					
 					<?php
 					if(isset($_SESSION['userId']))
 						{
