@@ -83,7 +83,7 @@
                                     <select style = "margin-bottom: 10px" class  ="black" name="category" id="category" required>
                                         <option value="">- Category -</option>
                                         <option value="graduation">Graduation</option>
-                                        <option value="corporate">Corporate</option>
+                                        <option value="events">Event</option>
                                         <option value="wedding">Wedding</option>
                                         <option value="birthday">Birthday</option>
 										<option value="anniversary">Anniversary</option>

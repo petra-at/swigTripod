@@ -1,7 +1,7 @@
 
 
 (function($) {
-
+	
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
@@ -18,9 +18,7 @@
 			$body = $('body'),
 			$header = $('#header2');
 			$scrolldown=$('#scrolldown');
-
-			
-
+		
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -28,6 +26,7 @@
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
+		
 			});
 
 		// Fix: Placeholder polyfill.
@@ -90,9 +89,6 @@
 				});
 				
 			})
-
-			
-			
 
 		// Menu.
 			$('#menu')

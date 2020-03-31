@@ -31,7 +31,6 @@
 	</head>
 
 	<body>
-
 		<!-- Header -->
 			<header id="header">
 				<nav>
@@ -40,6 +39,7 @@
 						if(isset($_SESSION['userId']))
 						{
 							echo '<a id="signout" href="./includes/logout.php">Sign out</a>' ;
+							
 						}
 					?>
 					<a href="#menu">Menu</a>
@@ -63,7 +63,7 @@
 				</ul>
 			</nav>
 
-		<!-- Two -->
+		<!-- Main -->
 			<section id="two" class="post invert style1 alt">
 				<aside class="image coloriseswig">
 					<img  src="./images/SwigProfileColour.jpg" alt="" data-position="10% center" />
@@ -83,6 +83,30 @@
 					</div>
 				</div>
 			</section>
+
+			
+
+
+		<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div style="position: relative; top: 25px;border-bottom: white;"class="modal-header">
+					<h2 class="modal-title black" id="exampleModalLabel">Welcome Swig</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="black bold modal-body">
+					<span style="font-weight:bold">You're logged in.</span><br>
+					You can now upload photos to the gallery! 
+				</div>
+				<div class="modal-footer">
+					<button style="margin:0 auto;" type="button" class="btn btn-secondary center" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -105,5 +129,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script> 
+				jQuery.noConflict(); 
+				if (window.location.href.indexOf("?login=success") > -1) {
+					$('#exampleModal').modal('show');
+				}
+			</script>
 	</body>
 </html>

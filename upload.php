@@ -62,7 +62,7 @@
 			</nav>
 
 			<section id="uploadSection" bac>
-					<form method="post" action="includes/upload.php">
+					<form method="post" action="includes/upload.php" enctype="multipart/form-data">
 							<h2 class="black">Upload Photos</h2>
 							<div class="row uniform ">
 								
@@ -71,14 +71,14 @@
 									<div class="select-wrapper grey">
 										<select style = "margin-bottom: 10px" class  ="black" name="category" id="category" required>
 											<option value="">- Category -</option>
-											<option value="graduation">Graduation</option>
-											<option value="events">Events</option>
-											<option value="wedding">Wedding</option>
-											<option value="birthday">Birthday</option>
-											<option value="anniversary">Anniversary</option>
-											<option value="familyPortrait">Family Portrait </option>
-											<option value="personalPortrait">Personal Portrait</option>
-											<option value="landscape">Landscape</option>
+											<option value="Graduation">Graduation</option>
+											<option value="Event">Event</option>
+											<option value="Wedding">Wedding</option>
+											<option value="Birthday">Birthday</option>
+											<option value="Anniversary">Anniversary</option>
+											<option value="FamilyPortrait">Family Portrait </option>
+											<option value="PersonalPortrait">Personal Portrait</option>
+											<option value="Landscape">Landscape</option>
 										</select>
 									</div>
 								</div>
@@ -87,7 +87,7 @@
 										<input type="text" name="imageCaption" id="name" value="" placeholder="Caption (optional)- i.e. Young girls 2nd birthday. "/>
 								</div>
 
-								<label for="myfile" style="margin-bottom:0px;width:100%">Maximum of 250MB</label>
+								<label for="myfile" style="margin-bottom:0px;width:100%">Maximum of 40MB</label>
 								<input type="file" style="padding-top:0px;"id="myfile" name="myfile" multiple required>
 							
 								<div class="12u$">
