@@ -104,9 +104,9 @@
 
 							<div class ="2u$ 6u$(small) black" style="color: black">
 									<h5 style="color: black">Contact Info</h5>
-									<span class="navbarIcons icon fa-phone "> (+263) 77 884 1952</span><br>
-									<span class="navbarIcons icon fa-envelope"><a href="mailto:pmugwise@gmail.com"> pmugwise@gmail.com</a></span><br>
-									<span class="navbarIcons icon fa-instagram"> <a href="https://www.instagram.com/swigstripod/"> Swig's Tripod</a></span>
+									<span class="navbarIcons icon fa-phone "></span><br>
+									<span class="navbarIcons icon fa-envelope"></span><br>
+									<span class="navbarIcons icon fa-instagram"></span>
 							</div>
 							
                             <div class="12u$">
